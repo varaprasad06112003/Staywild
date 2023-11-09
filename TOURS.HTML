@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css.map">
+    <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.js.map"></script>
+    <title>Document</title>
+    <style>
+        .super{
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+        .dance-font{
+            font-family: 'Dancing Script', cursive;
+        }
+        .nav-item:hover{
+            background-color: grey;
+            box-shadow: 0 0 10 0 black;
+            color: aliceblue;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+         :root {
+            --font-style: 'Nunito Sans', sans-serif;
+        }
+        
+        html,
+        body {
+            font-family: var(--font-style);
+            width: 100%;
+            height: 100%;
+            background-color: #2A2734;
+        }
+        .searsh{
+            bottom: 100%;
+                        position: absolute;
+                        top: 60%;
+                        left: 50%;
+                        font-size: medium;
+                        transform: translateX(-90%) translateY(-90%);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');   
+    *{
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+    }
+        body{
+	    height: 100vh;
+	    font-family: "Raleway", sans-serif;
+	    background: #2F3238;
+        }
+
+        .container{
+	        margin: 30px;
+        }
+
+        .row{
+	        width: 100%;
+    	    display: flex;
+	        justify-content: center;
+	        flex-wrap: wrap;
+        }
+
+        .image{
+	        background: #50A7FF;
+	        position: relative;
+	        flex: 1;
+	        max-width: 460px;
+	        height: 300px;
+	        margin: 20px;
+	        overflow: hidden;
+        }
+
+        .image img{
+	        opacity: 0.8;
+	        position: relative;
+	        vertical-align: top;
+	        transition: 0.6s;
+	        transition-property: opacity;
+        }
+
+        .image:hover img{
+	        opacity: 1;
+        }
+
+        .image .details{
+	        z-index: 1;
+	        position: absolute;
+	        top: 0;
+	        right: 0;
+	        color: #fff;
+	        width: 100%;
+	        height: 100%;
+        }
+
+        .image .details h6{
+	        text-align: center;
+	        font-size: 35px;
+	        text-transform: uppercase;
+	        font-weight: 300;
+	        margin-top: 70px;
+	        transition: 0.4s;
+	        transition-property: transform;
+        }
+
+        .image .details h6 span{
+	        font-weight: 900;
+        }
+
+        .image:hover .details h6{
+	        transform: translateY(-30px);
+        }
+
+        .image .details p{
+	        margin: 30px 30px 0 30px;
+	        font-size: 18px;
+	        font-weight: 600;
+	        text-align: center;
+	        opacity: 0;
+    	    transition: 0.6s;
+    	    transition-property: opacity, transform;
+        }
+
+        .image:hover .details p{
+	        opacity: 1;
+	        transform: translateY(-40px);
+        }
+
+        .more{
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            bottom: -60px;
+            transition: 0.6s;
+            transition-property: bottom;
+        }
+  
+        .image:hover .more{
+            bottom: 0;
+        }
+
+        .more .read-more{
+            color: #000;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .more .read-more span{
+            font-weight: 900;
+        }
+
+        .more .icon-links i{
+        color: #000;
+        font-size: 20px;
+        }
+
+        .more .icon-links a:not(:last-child) i{
+        margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand dance-font fs-2">STAY WILD<span class="fa fa-car text-white"> </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurant-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="restaurant-navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3 super">
+                        <a href="Home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-3 super">
+                        <a href="#" class="nav-link">Tours</a>
+                    </li>
+                    <li class="nav-item px-3 super">
+                        <a href="nav.html" class="nav-link">Service Provider </a>
+                    </li>
+                    <li class="nav-item px-3 super">
+                        <a href="Login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Slider-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img_bg_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img_bg_3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img_bg_5.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Form-->
+      <div class="container">
+        <h5 class="text-white">Book your tour</h5>
+        <form action="" class="form-inline">
+          <label class="text-white">Where <input class="form-control" type="text" placeholder="search location"></label>
+          <label style="margin-left: 100px;" class="text-white">Check-in date <input type="date" class="form-control"></label>
+          <label style="margin-left: 100px;" class="text-white">Check-out date <input type="date" class="form-control"></label>
+          <label style="margin-left: 100px;" class="text-white">Guest <select name="people" id="people" class="form-control">
+            <option value="#">1</option>
+            <option value="#">2</option>
+            <option value="#">3</option>
+            <option value="#">4</option>
+            <option value="#">5+</option>
+           </select></label>
+           <a href="book.html" class="btn btn-warning" style="margin-left: 100px;">Book Tour</a>
+        
+        </form>
+      </div>
+    <!--Tours-->
+    <!--image card layout start-->
+    <div class="container">
+        <!--image row start-->
+        <div class="row">
+          <!--image card start-->
+          <div class="image">
+            <img src="images/tour-2.jpg" alt="">
+            <div class="details">
+              <h6><span>FAMILY TOUR IN THAILAND</span><button type="button" class="btn btn-info px-5">$1350/ 3 Days</button></h6>
+              <div class="more">
+                <a href="#" class="read-more"><span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>650 reviews</span></a>
+                <div class="icon-links">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-bookmark"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="images/tour-1.jpg" alt="">
+            <div class="details">
+              <h6><span>FAMILY TOUR IN GREECE</span><button type="button" class="btn btn-info px-5">$1500/ 3 Days</button></h6>
+              <div class="more">
+                <a href="#" class="read-more"><span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>650 reviews</span></a>
+                <div class="icon-links">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-bookmark"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="images/tour-3.jpg" alt="">
+            <div class="details">
+              <h6><span>FAMILY TOUR IN MALDIVES</span><button type="button" class="btn btn-info px-5">$1300/ 3 Days</button></h6>
+              <div class="more">
+                <a href="#" class="read-more"><span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>650 reviews</span></a>
+                <div class="icon-links">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-bookmark"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+        <!--image row start-->
+        <div class="row">
+          <!--image card start-->
+          <div class="image">
+            <img src="images/tour-4.jpg" alt="">
+            <div class="details">
+              <h6><span>FAMILY TOUR IN AMAZON RINEFOREST</span><button type="button" class="btn btn-info px-5">$2000/ 3 Days</button></h6>
+              <div class="more">
+                <a href="#" class="read-more"><span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>650 reviews</span></a>
+                <div class="icon-links">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-bookmark"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="images/tour-5.jpg" alt="">
+            <div class="details">
+              <h6><span>FAMILY TOUR IN ENGLAND</span><button type="button" class="btn btn-info px-5">$1800/ 3 Days</button></h6>
+              <div class="more">
+                <a href="#" class="read-more"><span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>650 reviews</span></a>
+                <div class="icon-links">
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-bookmark"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="images/tour-6.jpg" alt="">
+            <div class="details">
+              <h6><span>FAMILY TOUR IN VENICE</span><button type="button" class="btn btn-info px-5">$1650/ 3 Days</button></h6>
+  
+              <div class="more">
+                <a href="#" class="read-more"><span><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>650 reviews</span></a>
+                <div class="icon-links">
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-eye"></i></a>
+                    <a href="#"><i class="fas fa-bookmark"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+    </div>
+    <!--Reviews-->
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h2>Our Satisfied Guests says</h2>
+          <p>We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <section class="reviews p-5" id="reviews">
+          <div class="grid">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="card shadow-lg" style="background-color: #2A2734;">
+                          <img src="images/person1.jpg" alt="" class="img-fluid">
+                          <div class="card-body">
+                              <p class="h3 card-title fw-bold">Alysha Myers</p>
+                              <p class="h6 card-title fw-bold">Miami Florida, USA</p><br>
+                              <p class="fst-italic">A small river named Duden flows by their place and supplies it with the necessary regelialia.The subline of her own road, the Line Lane.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card shadow-lg" style="background-color: #2A2734;">
+                          <img src="images/person2.jpg" alt="" class="img-fluid" >
+                          <div class="card-body">
+                              <p class="h3 card-title fw-bold">James Fisher</p>
+                              <p class="h6 card-title fw-bold">New York, USA</p>
+                              <br>
+                              <p class="fst-italic">One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                          </div>        
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card shadow-lg" style="background-color: #2A2734;">
+                          <img src="images/person3.jpg" alt="" class="img-fluid">
+                          <div class="card-body">
+                              <p class="h4 card-title fw-bold">Jacob Webb</p>
+                              <p class="h4 card-title fw-bold">Athens, Greece</p>
+                              <br>
+                              <p class="fst-italic">The subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                          </div>        
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white p-5 mt-5" id="interview application">
+        <div class="container">
+            <div class="grid">
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-4">
+                        <ul>
+                            <a href="Login.html" style="font-size: larger;font-style: italic;" class="nav-link">Login</a>
+                        </ul> 
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4"  style="text-align: center;">
+                        <p>Copyright © 2022</p>
+                        <small class="dance-font">STAY WILD <br>
+                            +91 9123456789 , <br>
+                            Hyderabad , Telangana , <br>
+                            India , 500089 <br></small>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook text-white"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter text-white"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin text-white"></i></a>
+                            
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

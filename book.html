@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css.map">
+    <link rel="stylesheet" href="Bootstrap/css/font-awesome.css">
+    <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.js.map"></script>
+    <title>Book your tickets</title>
+    <style>
+        .super{
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+        .dance-font{
+            font-family: 'Dancing Script', cursive;
+        }
+        .nav-item:hover{
+            background-color: grey;
+            box-shadow: 0 0 10 0 black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand dance-font fs-2"> Stay Wild <span class="fa fa-car text-white"> </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurant-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="restaurant-navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3 super">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-3 super">
+                        <a href="TOURS.HTML" class="nav-link">Tours</a>
+                    </li>
+                    <li class="nav-item px-3 super">
+                        <a href="nav.html" class="nav-link">Service Provider</a>
+                    </li>
+                    <li class="nav-item px-3 super">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-2">
+        <div class="col-md-6" style="margin: 0 auto;">
+            <h1 style="text-align: center;">Booking Form</h1>
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Name">
+                <input type="email" class="form-control mb-3" placeholder="Email">
+                <input type="number" class="form-control mb-3" placeholder="Phone Number">
+                <input type="text" class="form-control mb-3" placeholder="Tour Name">
+                <label for="datetime-local" class="form-control" style="color: #6c757d;">Booking-Date:-
+                <input type="datetime-local" style="color: #6c757d; text-align: center;">
+                </label>
+                <center><a href="login.html" type="submit" class="btn btn-warning mt-3 mb-3">Book Now</a></center>
+                <h5>For any help!We are here!<a href="home.html">Contact Us!</a></h5>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
